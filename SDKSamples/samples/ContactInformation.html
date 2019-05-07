@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LocaleIQ - Interactive SDK</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+    <link rel="stylesheet" href="/common/css/site.css">
+    <script type='text/javascript' src="/common/js/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="/common/js/sdk/LocaleIQMain.js"></script>
+    <script type="text/javascript" src="/common/js/sdk/LocaleIQContent.js"></script>
+    <script type="text/javascript">
+        LIQContent.getEntity(10, 8, function () { displayEntity(); });  // SectorID, EntityID, Callback Function
+        function displayEntity() {
+            document.getElementById('PnlEntity').innerHTML = '<h3>' + _entity.Title + '</h3>';
+            document.getElementById('PnlEntity').innerHTML += '<p>' + _entity.Website + '</p>';
+            document.getElementById('PnlEntity').innerHTML += '<p>' + _entity.Email + '</p>';
+            document.getElementById('PnlEntity').innerHTML += '<p>' + _entity.Phone + '</p>';
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="headerLogo"><img src="https://www.localeiq.com/common/images/puzzle-pieces.png" height="60" /><span>LocaleIQ</span><span style="float:right;">Interactive SDK v1.0 Beta</span></div>
+    </div>
+    <div class="leftNav">
+        <div class="accordion js-accordion">
+            <div class="accordion js-accordion">
+                <div class="accordion__item js-accordion-item active">
+                    <div class="accordion-header js-accordion-header">CONTENT MANAGEMENT</div>
+                    <div class="accordion-body js-accordion-body">
+                        <div class="accordion-body__contents">
+                            This section of the LocaleIQ SDK will provide developers with the code samples and the requirements necessary to incorporate your LocaleIQ account information into your application.
+                        </div>
+                        <div class="accordion js-accordion">
+                            <div class="accordion__item js-accordion-item active">
+                                <div class="accordion-header js-accordion-header">LocaleIQ API Samples</div>
+                                <div class="accordion-body js-accordion-body">
+                                    <div class="accordion-body__contents">
+                                        <a href="/SDKSamples/samples/Overview.html">Get Title &amp; Description</a><p />
+                                        <a href="/SDKSamples/samples/ContactInformation.html">Get Contact Information</a><p />
+                                        <a href="/SDKSamples/samples/Location.html">Get Location Information</a><p />
+                                        <a href="/SDKSamples/samples/Gallery.html">Get Images</a><p />
+                                        <a href="/SDKSamples/samples/Features.html">Get Features</a><p />
+                                        <a href="/SDKSamples/samples/Accessibility.html">Get Accessibility</a><p />
+                                        <a href="/SDKSamples/samples/Accommodations.html">Get Accommodations</a><p />
+                                        <a href="/SDKSamples/samples/Activities.html">Get Activities</a></p>
+                                        <a href="/SDKSamples/samples/AirQuality.html">Get Air Quality</a></p>
+                                        <a href="/SDKSamples/samples/Amenities.html">Get Amenities</a></p>
+                                        <a href="/SDKSamples/samples/Botanicals.html">Get Botanicals</a></p>
+                                        <a href="/SDKSamples/samples/BusinessPartners.html">Get Business Partners</a></p>
+                                        <a href="/SDKSamples/samples/BusinessOverview.html">Get Business Overview</a></p>
+                                        <a href="/SDKSamples/samples/Technologies.html">Get Technologies</a></p>
+                                        <a href="/SDKSamples/samples/Campsites.html">Get Campsites</a></p>
+                                        <a href="/SDKSamples/samples/Closures.html">Get Closures</a></p>
+                                        <a href="/SDKSamples/samples/Conditions.html">Get Conditions</a></p>
+                                        <a href="/SDKSamples/samples/Crops.html">Get Crops</a></p>
+                                        <a href="/SDKSamples/samples/Cuisines.html">Get Cuisines</a></p>
+                                        <a href="/SDKSamples/samples/EthnicDemographics.html">Get Ethnic Demographics</a></p>
+                                        <a href="/SDKSamples/samples/EducationServices.html">Get Education Services</a></p>
+                                        <a href="/SDKSamples/samples/EducationGradRates.html">Get Graduation Rates</a></p>
+                                        <a href="/SDKSamples/samples/EducationTestScores.html">Get Education Test Scores</a></p>
+                                        <a href="/SDKSamples/samples/Fees.html">Get Fees &amp; Reservations</a></p>
+                                        <a href="/SDKSamples/samples/GovernmentServices.html">Get Government Services</a></p>
+                                        <a href="/SDKSamples/samples/Files.html">Get Files</a></p>
+                                        <a href="/SDKSamples/samples/HealthServices.html">Get Healthcare Services</a></p>
+                                        <a href="/SDKSamples/samples/Hours.html">Get Hours</a></p>
+                                        <a href="/SDKSamples/samples/Incidents.html">Get Incidents</a></p>
+                                        <a href="/SDKSamples/samples/IncomeDemographics.html">Get IncomeDemographics</a></p>
+                                        <a href="/SDKSamples/samples/Inspections.html">Get Inspections</a></p>
+                                        <a href="/SDKSamples/samples/JobListings.html">Get Job Listings</a></p>
+                                        <a href="/SDKSamples/samples/Menus.html">Get Menus</a></p>
+                                        <a href="/SDKSamples/samples/Notifications.html">Get Notices &amp; Alerts</a></p>
+                                        <a href="/SDKSamples/samples/Parcel.html">Get Parcel</a></p>
+                                        <a href="/SDKSamples/samples/Rules.html">Get Rules</a></p>
+                                        <a href="/SDKSamples/samples/SalesHistory.html">Get Sales History</a></p>
+                                        <a href="/SDKSamples/samples/SocialMedia.html">Get Social Media</a></p>
+                                        <a href="/SDKSamples/samples/Transportation.html">Get Transportation</a></p>
+                                        <a href="/SDKSamples/samples/WaterQuality.html">Get Water Quality</a></p>
+                                        <a href="/SDKSamples/samples/Wildlife.html">Get Wildlife</a></p>
+                                        <a href="/SDKSamples/samples/WineVarietals.html">Get Wine Varietals</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item js-accordion-item">
+                                <div class="accordion-header js-accordion-header">LocaleIQ Themes</div>
+                                <div class="accordion-body js-accordion-body">
+                                    <div class="accordion-body__contents">
+                                        <p>Business Listing</p>
+                                        <p>Jobs Listing</p>
+                                        <p>Park Theme</p>
+                                        <p>Trail Theme</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item js-accordion-item">
+                <div class="accordion-header js-accordion-header">MAPPING</div>
+                <div class="accordion-body js-accordion-body">
+                    <div class="accordion-body__contents">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                    </div>
+                    <div class="accordion js-accordion">
+                        <div class="accordion__item js-accordion-item">
+                            <div class="accordion-header js-accordion-header">Mapping API</div>
+                            <div class="accordion-body js-accordion-body">
+                                <div class="accordion-body__contents">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                                </div><!-- end of sub accordion item body contents -->
+                            </div><!-- end of sub accordion item body -->
+                        </div><!-- end of sub accordion item -->
+                        <div class="accordion__item js-accordion-item">
+                            <div class="accordion-header js-accordion-header">Mapping Themes</div>
+                            <div class="accordion-body js-accordion-body">
+                                <div class="accordion-body__contents">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                                </div><!-- end of sub accordion item body contents -->
+                            </div><!-- end of sub accordion item body -->
+                        </div><!-- end of sub accordion item -->
+                    </div><!-- end of sub accordion -->
+                </div><!-- end of accordion body -->
+            </div>
+            <div class="accordion__item js-accordion-item">
+                <div class="accordion-header js-accordion-header">EVENTS MANAGEMENT</div>
+                <div class="accordion-body js-accordion-body">
+                    <div class="accordion-body__contents">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                    </div>
+                    <div class="accordion js-accordion">
+                        <div class="accordion__item js-accordion-item">
+                            <div class="accordion-header js-accordion-header">Events API</div>
+                            <div class="accordion-body js-accordion-body">
+                                <div class="accordion-body__contents">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                                </div><!-- end of sub accordion item body contents -->
+                            </div><!-- end of sub accordion item body -->
+                        </div><!-- end of sub accordion item -->
+                        <div class="accordion__item js-accordion-item">
+                            <div class="accordion-header js-accordion-header">Event Themes</div>
+                            <div class="accordion-body js-accordion-body">
+                                <div class="accordion-body__contents">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                                </div><!-- end of sub accordion item body contents -->
+                            </div><!-- end of sub accordion item body -->
+                        </div><!-- end of sub accordion item -->
+                    </div><!-- end of sub accordion -->
+                </div><!-- end of accordion body -->
+            </div>
+            <div class="accordion__item js-accordion-item">
+                <div class="accordion-header js-accordion-header">PROJECT MANAGEMENT</div>
+                <div class="accordion-body js-accordion-body">
+                    <div class="accordion-body__contents">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                    </div>
+                    <div class="accordion js-accordion">
+                        <div class="accordion__item js-accordion-item">
+                            <div class="accordion-header js-accordion-header">Projects API</div>
+                            <div class="accordion-body js-accordion-body">
+                                <div class="accordion-body__contents">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                                </div><!-- end of sub accordion item body contents -->
+                            </div><!-- end of sub accordion item body -->
+                        </div><!-- end of sub accordion item -->
+                        <div class="accordion__item js-accordion-item">
+                            <div class="accordion-header js-accordion-header">Project Themes</div>
+                            <div class="accordion-body js-accordion-body">
+                                <div class="accordion-body__contents">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                                </div><!-- end of sub accordion item body contents -->
+                            </div><!-- end of sub accordion item body -->
+                        </div><!-- end of sub accordion item -->
+                    </div><!-- end of sub accordion -->
+                </div><!-- end of accordion body -->
+            </div>
+            <div class="accordion__item js-accordion-item">
+                <div class="accordion-header js-accordion-header">ADDITIONAL RESOURCES</div>
+                <div class="accordion-body js-accordion-body">
+                    <div class="accordion-body__contents">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                    </div>
+                    <div class="accordion js-accordion">
+                        <div class="accordion__item js-accordion-item">
+                            <div class="accordion-header js-accordion-header">Documents</div>
+                            <div class="accordion-body js-accordion-body">
+                                <div class="accordion-body__contents">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                                </div><!-- end of sub accordion item body contents -->
+                            </div><!-- end of sub accordion item body -->
+                        </div><!-- end of sub accordion item -->
+                        <div class="accordion__item js-accordion-item">
+                            <div class="accordion-header js-accordion-header">Videos</div>
+                            <div class="accordion-body js-accordion-body">
+                                <div class="accordion-body__contents">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                                </div><!-- end of sub accordion item body contents -->
+                            </div><!-- end of sub accordion item body -->
+                        </div><!-- end of sub accordion item -->
+                        <div class="accordion__item js-accordion-item">
+                            <div class="accordion-header js-accordion-header">Additional Links</div>
+                        </div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                            </div><!-- end of sub accordion item body contents -->
+                        </div><!-- end of sub accordion item body -->
+                    </div><!-- end of sub accordion item -->
+                </div><!-- end of sub accordion -->
+            </div><!-- end of accordion body -->
+        </div>
+    </div><!-- end of accordion -->
+    <div class="content">
+        <div style="width:90%;margin:50px auto;">
+            <h2>API Sample - Contact Information</h2>
+            <p>This samples describes the method for requesting content for a given Entity and how to display the title and description of the entity returned.</p>
+            <h3>Code</h3>
+            <div style="width:100%;margin:20px auto;font-size:0.825rem;">
+                <pre style="width:90%;margin:5px 0;border-left:5pt solid maroon;background-color:#ebebeb;">
+                <code style="width:100%;padding:0 5px;">
+                        // CALL API TO GET ENTITY
+                        LIQContent.getEntity(10, 8, function () { displayEntity(); });  // SectorID, EntityID, Callback Function
+                        function displayEntity() {
+                            document.getElementById(PnlEntity).innerHTML = <span> _entity.Title </span><br />;
+                            document.getElementById(PnlEntity).innerHTML += <span> _entity.Website </span><br />;
+                            document.getElementById(PnlEntity).innerHTML += <span> _entity.Email </span><br />;
+                            document.getElementById(PnlEntity).innerHTML += <span> _entity.Phone </span><br />;
+                        }
+                    </code>
+            </pre>
+            </div>
+            <h3>Result: Entity Contact Information</h3>
+            <blockquote style="width:90%;margin:5px 0;border-left:3pt solid #008ec3;background-color:#ebebeb;">
+                <div id="PnlEntity" style="width:80%;padding:3%;"></div>
+            </blockquote>
+            <h3>Requirements</h3>
+            <p></p>
+            <div>
+                <table>
+                    <tr><td colspan="2">Required Files</td></tr>
+                    <tr><td>LocaleIQMain.js</td><td></td></tr>
+                    <tr><td>LocaleIQContent.js</td><td></td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="/common/js/site/menu.js"></script>
+</body>
+</html>

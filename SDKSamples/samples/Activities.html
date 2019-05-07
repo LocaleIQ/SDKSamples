@@ -1,0 +1,21 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type='text/javascript' src="/common/js/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="/common/js/sdk/LocaleIQMain.js"></script>
+    <script type="text/javascript" src="/common/js/sdk/LocaleIQContent.js"></script>
+    <script type="text/javascript">
+        LIQContent.getEntity(10, 8, function () { displayEntity(); } );  // SectorID, EntityID, Callback Function
+        function displayEntity() {
+            document.getElementById('EntityTitle').innerHTML = '<h3>' + _entity.Title + '</h3>';
+            document.getElementById('EntityTitle').innerHTML += '<p>' + _entity.Description + '</p>';
+        }
+    </script>
+</head>
+<body>
+    <p id="EntityTitle"></p>
+</body>
+</html>

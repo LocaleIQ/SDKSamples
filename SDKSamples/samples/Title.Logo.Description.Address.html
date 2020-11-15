@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>LocaleIQ - Interactive Intern Demo</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="icon" type="image/png" href="https://www.localeiq.com/common/images/puzzle-pieces.png" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--THIRD PARTY-->
+    <script type='text/javascript' src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="LocaleIQ.js" type="text/javascript"></script>
+    <script src="LocaleIQContent.js" type="text/javascript"></script>
+    <script src="LocaleIQDisplay.js" type="text/javascript"></script>
+    <script type="text/javascript">var _customerKey = 9;
+        LocaleIQ.Content.Entity.Details(165);
+        function MyDisplay(_entity) {
+
+            document.write(_entity.Title + '<br />');
+            document.write(_entity.Logo + '<br />');
+            document.write(_entity.Description + '<br />');
+            document.write(_entity.Location.Address + ', ');
+            document.write(_entity.Location.City + ' ');
+            document.write(_entity.Location.PostalCode + '<br />');
+            //document.write(_entity.Description + '<br />');
+            //document.write('<img src="' + _entity.Image + '" height="240" />');
+        }</script>
+</head>
+<body>
+    <div id="PnlEntity"></div>
+</body>
+</html>
